@@ -1,0 +1,158 @@
+.add-service-page {
+    min-height: 100vh;
+    background: #f7f9fc;
+    padding: 35px 20px;
+    box-sizing: border-box;
+}
+
+.add-service-container {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+
+
+.add-service-header {
+    text-align: center;
+    margin-bottom: 22px;
+}
+
+.add-service-header p {
+    margin: 0 0 5px;
+    color: #e6a21a;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.add-service-header h1 {
+    margin: 0 0 6px;
+    color: #142b45;
+    font-size: 28px;
+}
+
+.add-service-header span {
+    color: #687789;
+    font-size: 13px;
+}
+
+
+
+.add-service-card {
+    width: 100%;
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 28px;
+    background: #ffffff;
+    border: 1px solid #e1e7ee;
+    border-radius: 16px;
+    box-shadow: 0 6px 22px rgba(20, 43, 69, 0.09);
+    box-sizing: border-box;
+}
+
+
+
+.form-section {
+    margin-bottom: 16px;
+}
+
+.form-section label {
+    display: block;
+    margin-bottom: 6px;
+    color: #142b45;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.form-section input,
+.form-section textarea {
+    width: 100%;
+    padding: 11px 12px;
+    border: 1px solid #d8e0e8;
+    border-radius: 8px;
+    background: #fff;
+    color: #142b45;
+    font-size: 13px;
+    font-family: inherit;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.form-section input:focus,
+.form-section textarea:focus {
+    border-color: #e6a21a;
+    box-shadow: 0 0 0 2px rgba(230, 162, 26, 0.08);
+}
+
+.form-section textarea {
+    min-height: 95px;
+    resize: vertical;
+}
+
+
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+
+
+.add-service-btn {
+    width: 100%;
+    margin-top: 3px;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: #142b45;
+    color: white;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.add-service-btn:hover {
+    background: #1d3c5d;
+    transform: translateY(-1px);
+}
+
+
+
+@media (max-width: 600px) {
+
+    .add-service-page {
+        padding: 25px 14px;
+    }
+
+    .add-service-header h1 {
+        font-size: 24px;
+    }
+
+    .add-service-card {
+        padding: 20px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+}
+
+.add-service-page {
+    padding-top: 15px;
+}
+
+.add-service-header {
+    margin-bottom: 15px;
+}
+
+.add-service-header h1 {
+    margin-bottom: 4px;
+}
+
+.add-service-header p {
+    margin-bottom: 3px;
+}

@@ -1,0 +1,292 @@
+
+.provider-dashboard {
+    min-height: 100vh;
+    padding: 40px 6%;
+    background: #f6f8fb;
+    color: #142b45;
+}
+
+
+
+.provider-dashboard h1 {
+    margin: 0 0 30px;
+    font-size: 32px;
+    font-weight: 700;
+    color: #142b45;
+    position: relative;
+    padding-left: 15px;
+}
+
+.provider-dashboard h1::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 5px;
+    width: 5px;
+    height: 32px;
+    background: #f28c28;
+    border-radius: 5px;
+}
+
+
+
+
+.dashboard-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+    margin-bottom: 35px;
+}
+
+.dashboard-card {
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 24px;
+    border: 1px solid #e4e9ef;
+    box-shadow: 0 5px 18px rgba(20, 43, 69, 0.08);
+    transition: 0.25s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.dashboard-card::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 4px;
+    background: #f28c28;
+}
+
+.dashboard-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(20, 43, 69, 0.13);
+}
+
+.dashboard-card h3 {
+    margin: 0 0 12px;
+    color: #687789;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.dashboard-card h2 {
+    margin: 0;
+    color: #142b45;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+
+/* Different card accents */
+
+.dashboard-card:nth-child(1)::before {
+    background: #142b45;
+}
+
+.dashboard-card:nth-child(2)::before {
+    background: #f4b942;
+}
+
+.dashboard-card:nth-child(3)::before {
+    background: #3b82a0;
+}
+
+.dashboard-card:nth-child(4)::before {
+    background: #2e9b65;
+}
+
+.dashboard-card:nth-child(5)::before {
+    background: #d9534f;
+}
+
+.dashboard-card:nth-child(6)::before {
+    background: #f28c28;
+}
+
+
+
+
+.recent-bookings {
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 28px;
+    border: 1px solid #e4e9ef;
+    box-shadow: 0 5px 18px rgba(20, 43, 69, 0.08);
+}
+
+.recent-bookings h2 {
+    margin: 0 0 20px;
+    color: #142b45;
+    font-size: 22px;
+}
+
+
+
+
+.recent-booking {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 5px;
+    border-bottom: 1px solid #edf0f3;
+    transition: 0.2s ease;
+}
+
+.recent-booking:last-child {
+    border-bottom: none;
+}
+
+.recent-booking:hover {
+    background: #fff8f0;
+    padding-left: 12px;
+    padding-right: 12px;
+    border-radius: 8px;
+}
+
+
+/* Service name */
+
+.recent-booking strong {
+    color: #142b45;
+    font-size: 16px;
+}
+
+.recent-booking p {
+    margin: 6px 0 0;
+    color: #718096;
+    font-size: 14px;
+}
+
+
+/* Price */
+
+.recent-booking > div:last-child p {
+    color: #142b45;
+    font-weight: 700;
+}
+
+
+
+.recent-booking span {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: capitalize;
+    background: #eef2f6;
+    color: #142b45;
+}
+
+
+/* Pending */
+
+.recent-booking span.pending {
+    background: #fff4d6;
+    color: #9a6b00;
+}
+
+
+/* Confirmed */
+
+.recent-booking span.confirmed {
+    background: #e7f1ff;
+    color: #2463a5;
+}
+
+
+/* On the way */
+
+.recent-booking span.on_the_way {
+    background: #fff0df;
+    color: #c66a00;
+}
+
+
+/* Arrived */
+
+.recent-booking span.arrived {
+    background: #e9e5ff;
+    color: #5b43a8;
+}
+
+
+/* Completed */
+
+.recent-booking span.completed {
+    background: #e4f6ec;
+    color: #237a4b;
+}
+
+
+/* Cancelled */
+
+.recent-booking span.cancelled {
+    background: #fde8e8;
+    color: #c0392b;
+}
+
+
+
+
+@media (max-width: 900px) {
+
+    .dashboard-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .provider-dashboard {
+        padding: 30px 4%;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .provider-dashboard {
+        padding: 25px 18px;
+    }
+
+    .provider-dashboard h1 {
+        font-size: 26px;
+    }
+
+    .dashboard-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .dashboard-card {
+        padding: 20px;
+    }
+
+    .recent-booking {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .recent-booking > div:last-child {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.rating-card h2 {
+    color: #f28c28;
+}
+
+.rating-card p {
+    margin: 8px 0 0;
+    color: #718096;
+    font-size: 14px;
+}
+
+.review-stars {
+    background: #fff4df !important;
+    color: #f28c28 !important;
+    letter-spacing: 2px;
+}
